@@ -1,0 +1,122 @@
+.html {
+  font-size: 20px;
+  font-family: Lato, sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  /* max-width: 1230px; 1230+15+15 */
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.button {}
+
+.logo {}
+
+.button {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 52px;
+  padding: 0 40px;
+  color: #fff;
+  border-radius: 4px;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  white-space: nowrap;
+}
+
+
+
+/* =================================================================================================== */
+
+/* ! header */
+.header {
+  font-weight: 700;
+  color: #424551;
+}
+
+.header__top {}
+
+.header__top__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header__logo {
+  margin-right: 60px;
+}
+
+.header__nav {
+  margin-right: auto;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-item {
+  margin-right: 80px;
+}
+
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  white-space: nowrap;
+  line-height: 1.6;
+  color: #424551;
+  /* line-height: 160%; */
+  transition: all .3s;
+}
+
+.nav__link:hover {
+  color: #FF3F3A;
+}
+
+.header__btn-box {
+  display: flex;
+  align-items: center;
+}
+
+.header__top-btn {
+  margin-right: 36px;
+}
+
+.header__user-nav {
+  position: relative;
+  padding-left: 28px;
+}
+
+
+.header__user-nav::before {
+  content: "";
+  /* background: url(../img/header/Person.svg) no-repeat; */
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  
+}
+
+.header__user-btn {
+  white-space: nowrap;
+  transition: all .3s;
+}
+
+.header__user-btn:hover {
+  color: #FF3F3A;
+}
+
+.header__body {}
