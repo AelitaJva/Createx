@@ -88,6 +88,9 @@
 
 .header__nav-list {
   display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 0;
 }
 
 .header__nav-item {
