@@ -10,8 +10,11 @@
 
 .container {
   /* max-width: 1230px; 1230+15+15 */
-  max-width: 1260px;
+  max-width: 1230px;
+  width: 100%;
   margin: 0 auto;
+  padding: o 15px;
+  
 }
 
 .button {
@@ -52,17 +55,6 @@
 
 .logo {}
 
-/* .button {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 52px;
-  padding: 0 40px;
-  color: #fff;
-  border-radius: 4px;
-  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
-  white-space: nowrap;
-} */
-
 
 
 /* =================================================================================================== */
@@ -71,7 +63,8 @@
 .header {
   font-weight: 700;
   color: #424551;
-  background: #FEDAD5;
+  background: url(../img/header/background.png) no-repeat;
+  height: 100vh;
 }
 
 .header__top {
@@ -216,7 +209,6 @@
   justify-content: space-between;
   align-items: center;
   color: #1E212C;
-  padding: 130px 0;
 }
 
 .header__row>span {
