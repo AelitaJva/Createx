@@ -4,116 +4,41 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Serif:wght@400;700&display=swap"
-			rel="stylesheet" />
-		<link rel="stylesheet" href="./Aelita/css/reset.css" />
+		<link rel="stylesheet" href="./Aelita/scss/style.scss" />
 		<link rel="stylesheet" href="./Aelita/css/style.css" />
-		<title>Document</title>
+		<title>Repeat front</title>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<div class="header__top">
-					<div class="container">
-						<div class="header__top__inner">
-							<a href="#" class="header__logo logo">
-								<img src="./Aelita/img/header/logo.svg" alt="" />
-							</a>
-
+				<div class="container">
+					<div class="header__top">
+						<dic class="header__inner">
+							<a class="logo" href="#"
+								><img src="./Aelita/img/header/logo.svg" alt=""
+							/></a>
 							<nav class="header__nav">
-								<ul class="header__nav-list">
-									<li class="header__nav-item">
-										<a href="#" class="nav__link">About Us</a>
-									</li>
-									<li class="header__nav-item">
-										<a href="#" class="nav__link">Courses</a>
-									</li>
-									<li class="header__nav-item">
-										<a href="#" class="nav__link">Events</a>
-									</li>
-									<li class="header__nav-item">
-										<a href="#" class="nav__link">Blog</a>
-									</li>
-									<li class="header__nav-item">
-										<a href="#" class="nav__link">Contacts</a>
-									</li>
+								<ul class="nav__item">
+									<li class="nav__item__list">About Us</li>
+									<li class="nav__item__list">Courses</li>
+									<li class="nav__item__list">Courses</li>
+									<li class="nav__item__list">Blog</li>
+									<li class="nav__item__list">Contacts</li>
 								</ul>
 							</nav>
-
-							<div class="header__btn-box">
-								<div class="header__top-btn button">Get consultation</div>
-								<div class="header__user-nav">
-									<a href="#" class="header__user-btn">Log in</a>
-									/
-									<a href="#" class="header__user-btn">Register</a>
+							<div class="header__buttons">
+								<div class="consult">Get consultation</div>
+								<div class="users__button">
+									<a class="icons icon__first" href="#">Log in</a>
+									<span>/</span>
+									<a class="icons" href="#">Register</a>
 								</div>
 							</div>
-						</div>
+						</dic>
 					</div>
-				</div>
-				<div class="header__body">
-					<div class="container">
-						<div class="header__body--inner">
-							<div class="header__main">
-								<div class="header__content">
-									<a class="header__play">
-										<svg
-											width="84"
-											height="84"
-											viewBox="0 0 84 84"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<circle
-												opacity="0.12"
-												cx="42"
-												cy="42"
-												r="42"
-												fill="#FF3F3A" />
-											<circle cx="42" cy="42" r="26" fill="#FF3F3A" />
-											<path
-												d="M48.5 41.134C49.1667 41.5189 49.1667 42.4811 48.5 42.866L39.5 48.0622C38.8333 48.4471 38 47.966 38 47.1962L38 36.8038C38 36.034 38.8333 35.5529 39.5 35.9378L48.5 41.134Z"
-												fill="white" />
-										</svg>
-										Play showreel
-									</a>
-									<h3 class="header__title">
-										Enjoy studying with Createx Online Courses
-									</h3>
-									<div class="header__content--buttons">
-										<a href="" class="button--empty">About us</a>
-										<a href="" class="header__content-btn button"
-											>Explore courses</a
-										>
-									</div>
-								</div>
-								<img
-									src="./Aelita/img/header/illustration.png"
-									alt=""
-									class="header__img" />
-							</div>
-							<ul class="header__row">
-								<li class="header__row-item">
-									<span>1200</span>Students graduated
-								</li>
-								<span></span>
-								<li class="header__row-item">
-									<span>84</span>Completed courses
-								</li>
-								<span></span>
-								<li class="header__row-item">
-									<span>16</span>Qualified tutors
-								</li>
-								<span></span>
-								<li class="header__row-item">
-									<span>5</span>Years of experience
-								</li>
-							</ul>
-						</div>
-					</div>
+					<div class="header__body"></div>
 				</div>
 			</header>
 		</div>
 	</body>
-	<script src="./Aelita/js/main.js"></script>
 </html>

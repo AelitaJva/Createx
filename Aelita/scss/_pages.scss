@@ -1,0 +1,83 @@
+.wrapper {
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+a {
+	font-weight: 700;
+}
+
+// =================================================
+
+.header {
+	background: url(../img/header/background.png) no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+.header__top {
+	padding: 40px 0;
+}
+.header__inner {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.nav__item {
+	display: flex;
+	.nav__item__list {
+		margin: 0 30px;
+		color: #424551;
+		font-weight: 700;
+    transition: .5s;
+	}
+  .nav__item__list:hover{
+    text-shadow: 0 0 10px #f95712, 0 0 10px #f95712;
+  }
+}
+.header__buttons {
+	display: flex;
+}
+.consult {
+	margin: 0 30px;
+	display: inline-block;
+	padding: 18px 45px;
+	background: #f95712;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 700;
+  transition: .5s;
+}
+.consult:hover {
+  box-shadow: 0 0 10px #f95712;
+  transform: scale(1.05);
+}
+.users__button {
+	display: flex;
+	align-items: center;
+
+.icons {
+		color: #424551;
+    transition: .5s;
+	}
+  .icons:hover{
+    text-shadow: 0 0 10px #f95712, 0 0 10px #f95712;
+  }
+  .icon__first {
+    // background: url(../img/header/Person.svg) no-repeat;
+    // margin-left: 20px;
+  }
+	span {
+		margin: 0 8px;
+    font-weight: 700;
+	}
+}
