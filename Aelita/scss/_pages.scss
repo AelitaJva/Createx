@@ -311,16 +311,21 @@ a {
 
 	.cards {
 		display: flex;
+		justify-content: space-between;
 		flex-wrap: wrap;
 		margin-bottom: 25px;
+		
 		.card {
-			width: 344px;
-			margin-right: 25px;
-			border: 1px solid #E5E8ED;
-			
+			width: 365px;
+			border: 1px solid #e5e8ed;
+			border-radius: 5px;
 		}
 		img {
 			width: 100%;
+		}
+
+		.lastImg {
+			height: 100%;
 		}
 
 		.card__content {
@@ -328,7 +333,6 @@ a {
 		}
 		.card__btn {
 			display: inline-block;
-			// margin: 25px 0;
 			font-weight: 700;
 			font-size: 16px;
 			line-height: 160%;
@@ -340,19 +344,19 @@ a {
 		}
 
 		.manage {
-			background: #5A87FC;
+			background: #5a87fc;
 		}
 
 		.hr {
-			background: #F89828;
+			background: #f89828;
 		}
 
 		.design {
-			background: #F52F6E;
+			background: #f52f6e;
 		}
 
 		.develop {
-			background: #7772F1;
+			background: #7772f1;
 		}
 
 		.card__text {
@@ -368,6 +372,57 @@ a {
 			font-size: 16px;
 			line-height: 160%;
 			color: #1e212c;
+
+			&:hover {
+				color: #ff3f3a;
+			}
+		}
+	}
+	.bottom {
+		margin-top: 120px;
+		display: flex;
+		justify-content: space-between;
+
+		.left {
+			width: 340px;
+		}
+
+		.ser {
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 150%;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			margin-bottom: 8px;
+		}
+
+		.title {
+			font-weight: 900;
+			font-size: 36px;
+			line-height: 130%;
+			text-transform: none;
+		}
+
+		.text {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 160%;
+			color: #424551;
+			margin: 35px 0;
+		}
+
+		.images {
+			display: flex;
+
+			img {
+				margin-right: 15px;
+			}
+		}
+
+		.right {
+			.sertificate {
+				width: 710px;
+			}
 		}
 	}
 }
