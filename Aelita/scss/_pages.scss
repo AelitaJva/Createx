@@ -1,9 +1,10 @@
 .wrapper {
-	height: 100vh;
+	min-height: 100vh;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	font-size: 16px;
+	color: #1e212c;
 }
 
 .container {
@@ -38,11 +39,11 @@ a {
 		margin: 0 30px;
 		color: #424551;
 		font-weight: 700;
-    transition: .5s;
+		transition: 0.5s;
 	}
-  .nav__item__list:hover{
-    text-shadow: 0 0 10px #f95712, 0 0 10px #f95712;
-  }
+	.nav__item__list:hover {
+		text-shadow: 0 0 10px #f95712, 0 0 10px #f95712;
+	}
 }
 .header__buttons {
 	display: flex;
@@ -55,29 +56,208 @@ a {
 	border-radius: 4px;
 	color: #fff;
 	font-weight: 700;
-  transition: .5s;
+	transition: 0.5s;
 }
 .consult:hover {
-  box-shadow: 0 0 10px #f95712;
-  transform: scale(1.05);
+	box-shadow: 0 0 10px #f95712;
+	transform: scale(1.05);
 }
 .users__button {
 	display: flex;
 	align-items: center;
 
-.icons {
+	.icons {
 		color: #424551;
-    transition: .5s;
+		transition: 0.5s;
 	}
-  .icons:hover{
-    text-shadow: 0 0 10px #f95712, 0 0 10px #f95712;
-  }
-  .icon__first {
-    // background: url(../img/header/Person.svg) no-repeat;
-    // margin-left: 20px;
-  }
+	.icons:hover {
+		text-shadow: 0 0 10px #f95712, 0 0 10px #f95712;
+	}
+	.icon__first {
+		// background: url(../img/header/Person.svg) no-repeat;
+		// margin-left: 20px;
+	}
 	span {
 		margin: 0 8px;
-    font-weight: 700;
+		font-weight: 700;
+	}
+}
+
+//====== Header body=============
+
+.header__body {
+	margin: 30px 0;
+	.body__inner {
+		display: flex;
+		align-items: center;
+	}
+	.player__btn {
+		display: flex;
+		align-items: center;
+	}
+
+	p {
+		margin: 0 15px;
+		font-weight: 700;
+		color: #1e212c;
+	}
+
+	.title {
+		color: #1e212c;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 64px;
+		line-height: 130%;
+		margin: 50px 0;
+	}
+	.buttons {
+		display: inline-flex;
+	}
+	.btn__left {
+		color: #fa5417;
+		padding: 16px 28px;
+		border: 1px solid #f95712;
+		border-radius: 4px;
+	}
+	.btn__right {
+		margin: 0 30px;
+		display: inline-block;
+		padding: 16px 38px;
+		background: #f95712;
+		border-radius: 4px;
+		color: #fff;
+		font-weight: 700;
+	}
+
+	.picture {
+		width: 650px;
+	}
+}
+
+.header__bottom {
+	margin: 60px 0;
+	.items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		li {
+			display: flex;
+			align-items: center;
+			font-weight: 500;
+			color: #1e212c;
+		}
+
+		span {
+			position: relative;
+			font-weight: 900;
+			font-size: 46px;
+			line-height: 130%;
+			color: #1e212c;
+			margin-right: 10px;
+		}
+
+		.dot {
+			background: #ff3f3a;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+		}
+	}
+}
+
+// ! block 2
+.block__two {
+	margin: 80px 0;
+	.first__part {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 100px;
+	}
+
+	.left {
+		width: 600px;
+
+		.about {
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 8px;
+		}
+		.name {
+			font-weight: 900;
+			font-size: 40px;
+			line-height: 130%;
+			// margin-bottom: 48px;
+		}
+
+		.firstText {
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 150%;
+			margin: 28px 0;
+		}
+
+		.secondText {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 160%;
+			margin-bottom: 60px;
+		}
+
+		.buttons {
+			display: inline-flex;
+		}
+		.btn__left {
+			color: #fa5417;
+			padding: 16px 28px;
+			border: 1px solid #f95712;
+			border-radius: 4px;
+		}
+		.btn__right {
+			margin: 0 30px;
+			display: inline-block;
+			padding: 16px 38px;
+			background: #f95712;
+			border-radius: 4px;
+			color: #fff;
+			font-weight: 700;
+		}
+		.right {
+			img {
+				width: 333px;
+				margin: 0 70px;
+			}
+		}
+	}
+
+	.second__part {
+		display: flex;
+		// justify-content: space-between;
+		align-items: center;
+	}
+	.left {
+		margin-right: 100px;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.right {
+	}
+	p {
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 150%;
+		span {
+			margin-right: 12px;
+			font-weight: 900;
+			font-size: 48px;
+			line-height: 130%;
+			letter-spacing: 1px;
+			color: #ff3f3a;
+		}
 	}
 }
