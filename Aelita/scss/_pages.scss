@@ -314,7 +314,7 @@ a {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		margin-bottom: 25px;
-		
+
 		.card {
 			width: 365px;
 			border: 1px solid #e5e8ed;
@@ -341,22 +341,53 @@ a {
 
 			padding: 5px 8px;
 			border-radius: 3px;
+
+			transition: 0.5s;
+
+			&:hover {
+				box-shadow: 0 0 5px #03cea4;
+				transform: scale(1.1);
+			}
 		}
 
 		.manage {
 			background: #5a87fc;
+			transition: 0.5s;
+
+			&:hover {
+				box-shadow: 0 0 5px #5a87fc;
+				transform: scale(1.1);
+			}
 		}
 
 		.hr {
 			background: #f89828;
+			transition: 0.5s;
+
+			&:hover {
+				box-shadow: 0 0 5px #f89828;
+				transform: scale(1.1);
+			}
 		}
 
 		.design {
 			background: #f52f6e;
+			transition: 0.5s;
+
+			&:hover {
+				box-shadow: 0 0 5px #f52f6e;
+				transform: scale(1.1);
+			}
 		}
 
 		.develop {
 			background: #7772f1;
+			transition: 0.5s;
+
+			&:hover {
+				box-shadow: 0 0 5px #7772f1;
+				transform: scale(1.1);
+			}
 		}
 
 		.card__text {
@@ -373,15 +404,27 @@ a {
 			line-height: 160%;
 			color: #1e212c;
 
+			&::after {
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				width: 24px;
+				height: 24px;
+				background: url(../img/section2/arrow.svg) no-repeat;
+				margin-left: 11px;
+				transform: translateY(25%);
+			}
+
 			&:hover {
 				color: #ff3f3a;
 			}
 		}
 	}
 	.bottom {
-		margin-top: 120px;
+		margin-top: 130px;
 		display: flex;
 		justify-content: space-between;
+		// align-items: flex-start;
 
 		.left {
 			width: 340px;
@@ -421,8 +464,68 @@ a {
 
 		.right {
 			.sertificate {
-				width: 710px;
+				width: 705px;
 			}
+		}
+	}
+}
+
+// ! section 3
+.block__three {
+	padding: 150px 0;
+	background: #f4f5f6;
+
+	.team {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		margin-bottom: 8px;
+	}
+
+	h3 {
+		font-weight: 900;
+		font-size: 46px;
+		line-height: 130%;
+		margin-bottom: 60px;
+	}
+
+
+
+	.cards {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.card {
+		width: 250px;
+
+		img {
+			background: #ffcf2d;
+			padding: 17px 20px 0px 20px;
+			border-radius: 4px;
+		}
+
+		.name {
+			margin-top: 15px;
+			text-align: center;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 150%;
+		}
+
+		.prof {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 160%;
+			text-align: center;
+			color: #787a80;
 		}
 	}
 }
